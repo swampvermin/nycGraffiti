@@ -1,0 +1,276 @@
+body {
+	font-family: Courier, bold, serif;
+	color: rgb(40,40,40);
+	margin: 0;
+}
+
+.topLine{
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+}
+
+.navBar{
+	list-style: none;
+	padding-left: 20px;
+
+
+}
+
+.header{
+	font-weight: bold;
+	font-family: Helvetica;
+	margin-bottom: 0px;
+
+}
+
+#title{
+	font-family: Helvetica;
+	font-weight: bold;
+}
+
+.title-container{
+    padding-bottom: 2;
+}
+
+.gridBox{
+	display: grid;
+	margin: 0;
+	justify-content: start;
+}
+
+@media (min-width: 600px) {
+	.gridBox{
+		grid-template-columns: 1fr 3fr;
+	}
+
+}
+
+#item2{
+	padding-left: 20px;
+	margin-right: 20px;
+}
+
+
+.title-container{
+    padding-bottom: 10px;
+}
+
+
+a:link, a:visited{
+	color: rgb(40,40,40);
+	text-decoration:none;
+}
+a:hover{
+	font-style: italic;
+	color: red;
+}
+
+a:active{
+	font-weight: bold;
+}
+
+.articles {
+    list-style: none;
+    display: none;
+}
+
+.navBar li:hover .articles {
+    display: block;
+}
+
+.blogposts{
+	list-style: none;
+	padding: 0;
+
+	display: inline-grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 20px;
+	margin: 0;
+
+
+}
+
+.notesSS{
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.weekHeader{
+	margin: 0 0 8;
+}
+
+.linkText{
+	color: red !important;
+
+
+}
+.caption{
+	color: grey !important;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-size: 10pt;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.caption2 {
+	color: grey;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-size: 10pt;
+
+}
+
+.grey{
+	color: grey;
+
+}
+
+.smallPhoto{
+	width: 75%;
+	display: block;
+	margin: 0 auto;
+
+}
+
+.horizontal-line {
+  width: 100%; /* Set the width to fill the screen */
+  height: 1px; /* Set the height of the line */
+  background-color: black; /* Set the color of the line */
+}
+
+.footer {
+  padding: 20px; /* Padding for the footer */
+}
+
+.footer-container {
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 20px; /* Gap between columns */
+}
+
+.sourceList{
+	list-style: none;
+}
+
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.homepage-header {
+    font-family: Helvetica, bold, serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.homepage-navBar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.homepage-navBar li {
+    position: relative;
+    font-family: Helvetica, bold, serif;
+}
+
+.homepage-navBar a {
+    color: rgb(40,40,40);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.homepage-navBar a:hover {
+    color: red;
+    font-style: italic;
+}
+
+/* Hide the articles dropdown by default */
+.homepage-articles {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position it directly below the parent menu item */
+    left: 0;
+    list-style: none;
+    background-color: white; /* Ensure the dropdown has a background */
+    padding: 0;
+    margin: 0;
+}
+
+/* Show the dropdown on hover */
+.homepage-navBar li:hover .homepage-articles {
+    display: block;
+}
+
+/* Style the dropdown items */
+.homepage-articles li {
+    padding: 10px;
+    text-align: left;
+}
+
+.homepage-articles li a {
+    font-weight: normal;
+    text-decoration: none;
+    color: rgb(40,40,40);
+}
+
+.homepage-image-container {
+    margin-bottom: 20px;
+}
+
+.homepage-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.homepage-caption {
+    color: grey;
+    font-size: 10pt;
+    margin-top: 10px;
+    display: block;
+}
+
+.homepage-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+
+
+
